@@ -27,11 +27,6 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [SparkFun LilyMini (SAMD11)](https://www.sparkfun.com/products/14064)
 * [SparkFun SAMD21 Pro RF LoRa 915MHz](https://www.sparkfun.com/products/14916)
 
-#### ESP8266 Boards
-
-* [ESP8266 Thing](https://www.sparkfun.com/products/13231)
-* [ESP8266 WiFi Shield](https://www.sparkfun.com/products/13287)
-
 ### Notes
 
 * Some boards such as the Arduino Pro and Pro Mini come in more than one flavor.  For these **you must select the correct processor** in the 'Tools' menu.
