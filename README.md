@@ -9,8 +9,6 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [Pro Micro 5V](https://www.sparkfun.com/products/11098)
 * [Fio v3](https://www.sparkfun.com/products/11520)
 * [Qduino Mini](https://www.sparkfun.com/products/13614)
-* [Mega Pro 3.3V](https://www.sparkfun.com/products/10744)
-* [Mega Pro 5V](https://www.sparkfun.com/products/11007)
 * [ATmega128RFA1 Development Board](https://www.sparkfun.com/products/11197)
 * [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
 

@@ -171,50 +171,6 @@ qduinomini.build.extra_flags={build.usb_flags}
 qduinomini.build.usb_manufacturer="SparkFun Electronics"
 
 ################################################################################
-################################### Mega Pro ###################################
-################################################################################
-megapro.name=SparkFun Mega Pro
-
-megapro.upload.tool=arduino:avrdude
-megapro.upload.protocol=wiring
-megapro.upload.maximum_data_size=8192
-
-megapro.bootloader.tool=avrdude
-megapro.bootloader.unlock_bits=0x3F
-megapro.bootloader.lock_bits=0x0F
-
-megapro.build.board=AVR_MEGA2560
-megapro.build.core=arduino:arduino
-megapro.build.variant=arduino:mega
-megapro.build.mcu=atmega2560
-
-################################# Mega Pro 3.3V ################################
-megapro.menu.cpu.atmega25603V3=ATmega2560 (3.3V / 8 MHz)
-
-megapro.menu.cpu.atmega25603V3.upload.maximum_size=258048
-megapro.menu.cpu.atmega25603V3.upload.speed=57600
-
-megapro.menu.cpu.atmega25603V3.bootloader.low_fuses=0xFD
-megapro.menu.cpu.atmega25603V3.bootloader.high_fuses=0xD4
-megapro.menu.cpu.atmega25603V3.bootloader.extended_fuses=0xFD
-megapro.menu.cpu.atmega25603V3.bootloader.file=mega/MegaPro3.3V-8MHz-57600.hex
-
-megapro.menu.cpu.atmega25603V3.build.f_cpu=8000000L
-
-################################# Mega Pro 5V ##################################
-megapro.menu.cpu.atmega25605V=ATmega2560 (5V / 16 MHz)
-
-megapro.menu.cpu.atmega25605V.upload.maximum_size=253952
-megapro.menu.cpu.atmega25605V.upload.speed=115200
-
-megapro.menu.cpu.atmega25605V.bootloader.low_fuses=0xFF
-megapro.menu.cpu.atmega25605V.bootloader.high_fuses=0xD8
-megapro.menu.cpu.atmega25605V.bootloader.extended_fuses=0xFD
-megapro.menu.cpu.atmega25605V.bootloader.file=arduino:stk500v2/stk500boot_v2_mega2560.hex
-
-megapro.menu.cpu.atmega25605V.build.f_cpu=16000000L
-
-################################################################################
 ###################### ATmega128RFA1 Development Board #########################
 ################################################################################
 atmega128rfa1.name=SparkFun ATmega128RFA1 Dev Board
