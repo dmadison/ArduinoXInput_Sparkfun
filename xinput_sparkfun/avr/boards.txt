@@ -8,32 +8,6 @@
 menu.cpu=Processor
 
 ################################################################################
-################################### RedBoard ###################################
-################################################################################
-RedBoard.name=SparkFun RedBoard
-
-RedBoard.upload.tool=avrdude
-RedBoard.upload.protocol=arduino
-RedBoard.upload.maximum_size=32256
-RedBoard.upload.maximum_data_size=2048
-RedBoard.upload.speed=115200
-
-RedBoard.bootloader.tool=avrdude
-RedBoard.bootloader.low_fuses=0xFF
-RedBoard.bootloader.high_fuses=0xDE
-RedBoard.bootloader.extended_fuses=0x05
-RedBoard.bootloader.unlock_bits=0x3F
-RedBoard.bootloader.lock_bits=0x0F
-RedBoard.bootloader.file=optiboot/optiboot_atmega328.hex
-
-RedBoard.build.mcu=atmega328p
-RedBoard.build.f_cpu=16000000L
-RedBoard.build.board=AVR_UNO
-RedBoard.build.core=arduino:arduino
-RedBoard.build.variant=arduino:standard
-
-
-################################################################################
 #################################### MaKey MaKey ###############################
 ################################################################################
 makeymakey.name=SparkFun MaKey MaKey
@@ -197,33 +171,6 @@ qduinomini.build.extra_flags={build.usb_flags}
 qduinomini.build.usb_manufacturer="SparkFun Electronics"
 
 ################################################################################
-################################ Digital Sandbox ###############################
-################################################################################
-digitalsandbox.name=SparkFun Digital Sandbox
-digitalsandbox.build.board=AVR_DIGITAL_SANDBOX
-
-digitalsandbox.upload.tool=arduino:avrdude
-digitalsandbox.upload.protocol=arduino
-digitalsandbox.upload.maximum_size=32256
-digitalsandbox.upload.speed=57600
-digitalsandbox.upload.maximum_data_size=2048
-
-digitalsandbox.bootloader.low_fuses=0xFF
-digitalsandbox.bootloader.high_fuses=0xDE
-digitalsandbox.bootloader.extended_fuses=0x05
-digitalsandbox.bootloader.file=optiboot/optiboot_atmega328.hex
-digitalsandbox.bootloader.unlock_bits=0x3F
-digitalsandbox.bootloader.lock_bits=0x2F
-digitalsandbox.bootloader.tool=arduino:avrdude
-
-digitalsandbox.build.mcu=atmega328p
-# Can run at less than 5V on battery, so run at only 8MHz
-digitalsandbox.build.f_cpu=8000000L
-digitalsandbox.build.core=arduino:arduino
-digitalsandbox.build.variant=digitalsandbox
-
-
-################################################################################
 ################################### Mega Pro ###################################
 ################################################################################
 megapro.name=SparkFun Mega Pro
@@ -266,60 +213,6 @@ megapro.menu.cpu.atmega25605V.bootloader.extended_fuses=0xFD
 megapro.menu.cpu.atmega25605V.bootloader.file=arduino:stk500v2/stk500boot_v2_mega2560.hex
 
 megapro.menu.cpu.atmega25605V.build.f_cpu=16000000L
-
-
-################################################################################
-#################################### RedBot ####################################
-################################################################################
-RedBot.name=SparkFun RedBot
-
-RedBot.upload.tool=avrdude
-RedBot.upload.protocol=arduino
-RedBot.upload.maximum_size=32256
-RedBot.upload.maximum_data_size=2048
-RedBot.upload.speed=115200
-
-RedBot.bootloader.tool=avrdude
-RedBot.bootloader.low_fuses=0xFF
-RedBot.bootloader.high_fuses=0xDE
-RedBot.bootloader.extended_fuses=0x05
-RedBot.bootloader.unlock_bits=0x3F
-RedBot.bootloader.lock_bits=0x0F
-RedBot.bootloader.file=optiboot/optiboot_atmega328.hex
-
-RedBot.build.mcu=atmega328p
-RedBot.build.f_cpu=16000000L
-RedBot.build.board=REDBOT
-RedBot.build.core=arduino:arduino
-RedBot.build.variant=arduino:standard
-
-
-################################################################################
-############################ Serial 7-Segment Display ##########################
-################################################################################
-Serial7Seg.name=SparkFun Serial 7-Segment Display
-Serial7Seg.build.board=AVR_SERIAL_7_SEGMENT
-
-Serial7Seg.upload.tool=arduino:avrdude
-Serial7Seg.upload.protocol=arduino
-Serial7Seg.upload.maximum_size=32256
-Serial7Seg.upload.speed=57600
-Serial7Seg.upload.maximum_data_size=2048
-
-# Use internal oscillator @ 8MHz / 8 (0xE2)
-Serial7Seg.bootloader.low_fuses=0xE2
-Serial7Seg.bootloader.high_fuses=0xDE
-Serial7Seg.bootloader.extended_fuses=0x05
-Serial7Seg.bootloader.file=optiboot/optiboot_serial7Seg.hex
-Serial7Seg.bootloader.unlock_bits=0x3F
-Serial7Seg.bootloader.lock_bits=0x2F
-Serial7Seg.bootloader.tool=arduino:avrdude
-
-Serial7Seg.build.mcu=atmega328p
-Serial7Seg.build.f_cpu=8000000L
-Serial7Seg.build.core=arduino:arduino
-Serial7Seg.build.variant=ser7seg
-
 
 ################################################################################
 ###################### ATmega128RFA1 Development Board #########################
@@ -380,29 +273,3 @@ LilyPadProtoUSB.build.board=AVR_LILYPAD_ARDUINO_USB_PLUS_BOARD
 LilyPadProtoUSB.build.core=arduino:arduino
 LilyPadProtoUSB.build.variant=lilypadusbplus
 LilyPadProtoUSB.build.extra_flags={build.usb_flags}
-
-
-################################################################################
-################################### SerLCD #####################################
-################################################################################
-SerLCD.name=SparkFun SerLCD
-
-SerLCD.upload.tool=avrdude
-SerLCD.upload.protocol=arduino
-SerLCD.upload.maximum_size=32256
-SerLCD.upload.maximum_data_size=2048
-SerLCD.upload.speed=115200
-
-SerLCD.bootloader.tool=avrdude
-SerLCD.bootloader.low_fuses=0xFF
-SerLCD.bootloader.high_fuses=0xDE
-SerLCD.bootloader.extended_fuses=0xFD
-SerLCD.bootloader.unlock_bits=0x3F
-SerLCD.bootloader.lock_bits=0x0F
-SerLCD.bootloader.file=optiboot/optiboot_SerLCD.hex
-
-SerLCD.build.mcu=atmega328p
-SerLCD.build.f_cpu=11059200L
-SerLCD.build.board=AVR_UNO
-SerLCD.build.core=arduino:arduino
-SerLCD.build.variant=arduino:standard

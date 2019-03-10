@@ -4,17 +4,13 @@ This repository contains support for the following SparkFun Arduino-compatible d
 
 #### AVR Boards
 
-* [RedBoard](https://www.sparkfun.com/products/12757)
 * [MaKey MaKey](https://www.sparkfun.com/products/11511)
 * [Pro Micro 3.3V](https://www.sparkfun.com/products/10999)
 * [Pro Micro 5V](https://www.sparkfun.com/products/11098)
 * [Fio v3](https://www.sparkfun.com/products/11520)
 * [Qduino Mini](https://www.sparkfun.com/products/13614)
-* [Digital Sandbox](https://www.sparkfun.com/products/12651)
 * [Mega Pro 3.3V](https://www.sparkfun.com/products/10744)
 * [Mega Pro 5V](https://www.sparkfun.com/products/11007)
-* [RedBot](https://www.sparkfun.com/products/12097)
-* [Serial 7-Segment Display](https://www.sparkfun.com/products/11441)
 * [ATmega128RFA1 Development Board](https://www.sparkfun.com/products/11197)
 * [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
 
