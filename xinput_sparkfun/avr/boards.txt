@@ -10,7 +10,7 @@ menu.cpu=Processor
 ################################################################################
 #################################### MaKey MaKey ###############################
 ################################################################################
-makeymakey.name=SparkFun MaKey MaKey
+makeymakey.name=SparkFun MaKey MaKey w/ XInput
 makeymakey.build.board=AVR_MAKEYMAKEY
 makeymakey.build.vid.0=0x1B4F
 makeymakey.build.pid.0=0x2B74
@@ -47,7 +47,7 @@ makeymakey.build.usb_manufacturer="SparkFun Electronics"
 ################################################################################
 ################################## Pro Micro ###################################
 ################################################################################
-promicro.name=SparkFun Pro Micro
+promicro.name=SparkFun Pro Micro w/ XInput
 
 promicro.upload.tool=avrdude
 promicro.upload.protocol=avr109
@@ -99,7 +99,7 @@ promicro.menu.cpu.16MHzatmega32U4.bootloader.file=caterina/Caterina-promicro16.h
 ################################################################################
 ############################## Fio v3 3.3V / 8MHz ##############################
 ################################################################################
-fiov3.name=SparkFun Fio v3
+fiov3.name=SparkFun Fio v3 w/ XInput
 fiov3.build.board=AVR_FIOV3
 fiov3.build.vid.0=0x1B4F
 fiov3.build.pid.0=0xF100
@@ -136,7 +136,7 @@ fiov3.build.usb_manufacturer="SparkFun Electronics"
 ################################################################################
 ################################ Qduino Mini ###################################
 ################################################################################
-qduinomini.name=Qduino Mini
+qduinomini.name=Qduino Mini w/ XInput
 qduinomini.build.vid.0=0x1B4F
 qduinomini.build.pid.0=0x514D
 qduinomini.build.vid.1=0x1B4F
@@ -174,7 +174,7 @@ qduinomini.build.usb_manufacturer="SparkFun Electronics"
 ############################# LilyPad USB Plus #################################
 ################################################################################
 
-LilyPadProtoUSB.name=LilyPad USB Plus
+LilyPadProtoUSB.name=LilyPad USB Plus w/ XInput
 LilyPadProtoUSB.vid.0=0x1B4F
 LilyPadProtoUSB.pid.0=0x0110
 
