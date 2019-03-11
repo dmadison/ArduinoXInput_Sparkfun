@@ -43,3 +43,13 @@ This boards package uses the same process for installation. Download [the latest
 Restart the Arduino IDE. If the SparkFun boards are installed correctly, you should see a new collection of "SparkFun AVR Boards w/ XInput" in the `Tools -> Boards` menu.
 
 To uninstall, delete the 'xinput_sparkfun' folder in the 'hardware' directory, and then restart the Arduino IDE.
+
+## Upload Warning and Instructions
+
+**!!!!!!! IMPORTANT !!!!!!!**
+
+Due to the nature of how the XInput USB mode works, Arduinos that have XInput sketches on them will ***not*** automatically reset when programmed by the IDE! You will need to reset the board by hand every time you upload new code.
+
+[Full instructions for uploading are provided in the AVR Core repository](https://github.com/dmadison/ArduinoXInput_AVR/#upload-warning-and-instructions).
+
+**Do *not* upload XInput sketches to your Arduino unless you know how to reset it!** Otherwise you will not be able to program it anymore and you'll have to [reflash the bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all) with an external programmer.
