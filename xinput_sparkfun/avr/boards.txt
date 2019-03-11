@@ -10,7 +10,7 @@ menu.cpu=Processor
 ################################################################################
 #################################### MaKey MaKey ###############################
 ################################################################################
-makeymakey.name=SparkFun MaKey MaKey
+makeymakey.name=SparkFun MaKey MaKey w/ XInput
 makeymakey.build.board=AVR_MAKEYMAKEY
 makeymakey.build.vid.0=0x1B4F
 makeymakey.build.pid.0=0x2B74
@@ -35,10 +35,10 @@ makeymakey.bootloader.tool=arduino:avrdude
 
 makeymakey.build.mcu=atmega32u4
 makeymakey.build.f_cpu=16000000L
-makeymakey.build.vid=0x1B4F
-makeymakey.build.pid=0x2B75
+makeymakey.build.vid=0x045E
+makeymakey.build.pid=0x028E
 makeymakey.build.usb_product="SparkFun MaKey MaKey"
-makeymakey.build.core=arduino:arduino
+makeymakey.build.core=xinput:arduino
 makeymakey.build.variant=promicro
 makeymakey.build.extra_flags={build.usb_flags}
 makeymakey.build.usb_manufacturer="SparkFun Electronics"
@@ -47,7 +47,7 @@ makeymakey.build.usb_manufacturer="SparkFun Electronics"
 ################################################################################
 ################################## Pro Micro ###################################
 ################################################################################
-promicro.name=SparkFun Pro Micro
+promicro.name=SparkFun Pro Micro w/ XInput
 
 promicro.upload.tool=avrdude
 promicro.upload.protocol=avr109
@@ -65,11 +65,11 @@ promicro.bootloader.low_fuses=0xFF
 promicro.bootloader.high_fuses=0xD8
 
 promicro.build.board=AVR_PROMICRO
-promicro.build.core=arduino:arduino
+promicro.build.core=xinput:arduino
 promicro.build.variant=promicro
 promicro.build.mcu=atmega32u4
 promicro.build.usb_product="SparkFun Pro Micro"
-promicro.build.vid=0x1b4f
+promicro.build.vid=0x045E
 promicro.build.extra_flags={build.usb_flags}
 
 ######################### Pro Micro 3.3V / 8MHz ################################
@@ -77,7 +77,7 @@ promicro.menu.cpu.8MHzatmega32U4=ATmega32U4 (3.3V, 8 MHz)
 
 promicro.menu.cpu.8MHzatmega32U4.build.pid.0=0x9203
 promicro.menu.cpu.8MHzatmega32U4.build.pid.1=0x9204
-promicro.menu.cpu.8MHzatmega32U4.build.pid=0x9204
+promicro.menu.cpu.8MHzatmega32U4.build.pid=0x028E
 promicro.menu.cpu.8MHzatmega32U4.build.f_cpu=8000000L
 
 promicro.menu.cpu.8MHzatmega32U4.bootloader.extended_fuses=0xFE
@@ -89,7 +89,7 @@ promicro.menu.cpu.16MHzatmega32U4=ATmega32U4 (5V, 16 MHz)
 
 promicro.menu.cpu.16MHzatmega32U4.build.pid.0=0x9205
 promicro.menu.cpu.16MHzatmega32U4.build.pid.1=0x9206
-promicro.menu.cpu.16MHzatmega32U4.build.pid=0x9206
+promicro.menu.cpu.16MHzatmega32U4.build.pid=0x028E
 promicro.menu.cpu.16MHzatmega32U4.build.f_cpu=16000000L
 
 promicro.menu.cpu.16MHzatmega32U4.bootloader.extended_fuses=0xCB
@@ -99,7 +99,7 @@ promicro.menu.cpu.16MHzatmega32U4.bootloader.file=caterina/Caterina-promicro16.h
 ################################################################################
 ############################## Fio v3 3.3V / 8MHz ##############################
 ################################################################################
-fiov3.name=SparkFun Fio v3
+fiov3.name=SparkFun Fio v3 w/ XInput
 fiov3.build.board=AVR_FIOV3
 fiov3.build.vid.0=0x1B4F
 fiov3.build.pid.0=0xF100
@@ -124,10 +124,10 @@ fiov3.bootloader.tool=arduino:avrdude
 
 fiov3.build.mcu=atmega32u4
 fiov3.build.f_cpu=8000000L
-fiov3.build.vid=0x1B4F
-fiov3.build.pid=0xF101
+fiov3.build.vid=0x045E
+fiov3.build.pid=0x028E
 fiov3.build.usb_product="SparkFun Fio v3"
-fiov3.build.core=arduino:arduino
+fiov3.build.core=xinput:arduino
 fiov3.build.variant=promicro
 fiov3.build.extra_flags={build.usb_flags}
 fiov3.build.usb_manufacturer="SparkFun Electronics"
@@ -136,7 +136,7 @@ fiov3.build.usb_manufacturer="SparkFun Electronics"
 ################################################################################
 ################################ Qduino Mini ###################################
 ################################################################################
-qduinomini.name=Qduino Mini
+qduinomini.name=Qduino Mini w/ XInput
 qduinomini.build.vid.0=0x1B4F
 qduinomini.build.pid.0=0x514D
 qduinomini.build.vid.1=0x1B4F
@@ -161,11 +161,11 @@ qduinomini.bootloader.lock_bits=0x2F
 
 qduinomini.build.mcu=atmega32u4
 qduinomini.build.f_cpu=8000000L
-qduinomini.build.vid=0x1B4F
-qduinomini.build.pid=0x516D
+qduinomini.build.vid=0x045E
+qduinomini.build.pid=0x028E
 qduinomini.build.usb_product="Qtechknow Qduino Mini"
 qduinomini.build.board=AVR_QDUINOMINI
-qduinomini.build.core=arduino:arduino
+qduinomini.build.core=xinput:arduino
 qduinomini.build.variant=promicro
 qduinomini.build.extra_flags={build.usb_flags}
 qduinomini.build.usb_manufacturer="SparkFun Electronics"
@@ -174,7 +174,7 @@ qduinomini.build.usb_manufacturer="SparkFun Electronics"
 ############################# LilyPad USB Plus #################################
 ################################################################################
 
-LilyPadProtoUSB.name=LilyPad USB Plus
+LilyPadProtoUSB.name=LilyPad USB Plus w/ XInput
 LilyPadProtoUSB.vid.0=0x1B4F
 LilyPadProtoUSB.pid.0=0x0110
 
@@ -197,10 +197,10 @@ LilyPadProtoUSB.bootloader.lock_bits=0x2F
 
 LilyPadProtoUSB.build.mcu=atmega32u4
 LilyPadProtoUSB.build.f_cpu=8000000L
-LilyPadProtoUSB.build.vid=0x1B4F
-LilyPadProtoUSB.build.pid=0x0110
+LilyPadProtoUSB.build.vid=0x045E
+LilyPadProtoUSB.build.pid=0x028E
 LilyPadProtoUSB.build.usb_product="LilyPad USB Plus"
 LilyPadProtoUSB.build.board=AVR_LILYPAD_ARDUINO_USB_PLUS_BOARD
-LilyPadProtoUSB.build.core=arduino:arduino
+LilyPadProtoUSB.build.core=xinput:arduino
 LilyPadProtoUSB.build.variant=lilypadusbplus
 LilyPadProtoUSB.build.extra_flags={build.usb_flags}
