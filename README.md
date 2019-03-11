@@ -1,6 +1,8 @@
-# SparkFun Arduino Boards
+# SparkFun Arduino Boards w/ XInput 
 
-This repository contains support for the following SparkFun Arduino-compatible development boards.
+This repository contains support for the following SparkFun Arduino-compatible development boards, modified to work as XInput devices. Originally forked from [the SparkFun repo](https://github.com/sparkfun/Arduino_Boards).
+
+These boards are meant to be used in conjunction with the [ArduinoXInput library](https://github.com/dmadison/ArduinoXInput).
 
 #### AVR Boards
 
@@ -10,8 +12,3 @@ This repository contains support for the following SparkFun Arduino-compatible d
 * [Fio v3](https://www.sparkfun.com/products/11520)
 * [Qduino Mini](https://www.sparkfun.com/products/13614)
 * [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
-
-### Notes
-
-* Some boards such as the Arduino Pro and Pro Mini come in more than one flavor.  For these **you must select the correct processor** in the 'Tools' menu.
-* Information on compiling and programming the bootloaders can be found in the bootloaders directory.
