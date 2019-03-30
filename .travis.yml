@@ -46,7 +46,7 @@ before_install:
     }
 
 install:
-  - ln -s $PWD $BOARDS_DESTINATION/
+  - ln -s $PWD/xinput_sparkfun $BOARDS_DESTINATION
 
 script:
   # SparkFun MaKey MaKey w/ XInput
