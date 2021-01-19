@@ -1,0 +1,64 @@
+name: build
+
+on: [push, pull_request, workflow_dispatch]
+
+env:
+  IDE_VERSION: 1.8.13
+  IDE_LOCATION: /usr/local/share/arduino
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        compilation: ['Blank Sketch', 'USB API Demo', 'XInput Library']
+        include:
+          - compilation: 'Blank Sketch'
+            sketch: "$IDE_LOCATION/examples/01.Basics/BareMinimum/BareMinimum.ino"
+          - compilation: 'USB API Demo'
+            sketch: "$IDE_LOCATION/libraries/ArduinoXInput/extras/API-Demo/API-Demo.ino"
+          - compilation: 'XInput Library'
+            sketch: "$IDE_LOCATION/libraries/ArduinoXInput/examples/GamepadPins/GamepadPins.ino"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install Arduino IDE
+        run: |
+          wget http://downloads.arduino.cc/arduino-$IDE_VERSION-linux64.tar.xz
+          tar xf arduino-$IDE_VERSION-linux64.tar.xz
+          sudo mv arduino-$IDE_VERSION /usr/local/share/arduino
+          sudo ln -s /usr/local/share/arduino/arduino /usr/local/bin/arduino
+          rm arduino-$IDE_VERSION-linux64.tar.xz
+
+      - name: Install XInput AVR Boards
+        run: |
+          git clone https://github.com/dmadison/ArduinoXInput_AVR.git;
+          mkdir -p $IDE_LOCATION/hardware/xinput/avr;
+          mv ArduinoXInput_AVR/* $IDE_LOCATION/hardware/xinput/avr;
+          rm -rf ArduinoXInput_AVR;
+
+      - name: Link SparkFun Boards Files
+        run: ln -s $PWD/xinput_sparkfun $IDE_LOCATION/hardware
+
+      - name: Install XInput Library
+        if: contains(matrix.sketch, 'ArduinoXInput')
+        run: |
+          git clone https://github.com/dmadison/ArduinoXInput.git;
+          sudo mv ArduinoXInput $IDE_LOCATION/libraries;
+
+      - name: Build All Boards
+        run: |
+          buildSketch() {
+            echo -e "\nBuilding sketch ${{ matrix.sketch }} for $BOARD";
+            arduino --verify --board $BOARD ${{ matrix.sketch }};
+          }
+
+          BOARD=xinput_sparkfun:avr:makeymakey; buildSketch;
+          BOARD=xinput_sparkfun:avr:promicro:cpu=16MHzatmega32U4; buildSketch;
+          BOARD=xinput_sparkfun:avr:promicro:cpu=8MHzatmega32U4; buildSketch;
+          BOARD=xinput_sparkfun:avr:fiov3; buildSketch;
+          BOARD=xinput_sparkfun:avr:qduinomini; buildSketch;
+          BOARD=xinput_sparkfun:avr:LilyPadProtoUSB; buildSketch
