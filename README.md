@@ -1,4 +1,4 @@
-# SparkFun Arduino Boards w/ XInput [![Build Status](https://travis-ci.org/dmadison/ArduinoXInput_Sparkfun.svg?branch=master)](https://travis-ci.org/dmadison/ArduinoXInput_Sparkfun)
+# SparkFun Arduino Boards w/ XInput
 
 This repository contains support for the following SparkFun Arduino-compatible development boards, modified to work as XInput devices. Originally forked from [the SparkFun repo](https://github.com/sparkfun/Arduino_Boards).
 
