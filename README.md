@@ -1,17 +1,9 @@
-# SparkFun Arduino Boards w/ XInput [![Build Status](https://github.com/dmadison/ArduinoXInput_Sparkfun/workflows/build/badge.svg?branch=master)](https://github.com/dmadison/ArduinoXInput_Sparkfun/actions?query=workflow%3Abuild)
+# SparkFun Arduino Boards w/ XInput
+[![Build Status](https://github.com/dmadison/ArduinoXInput_Sparkfun/workflows/build/badge.svg?branch=master)](https://github.com/dmadison/ArduinoXInput_Sparkfun/actions?query=workflow%3Abuild)
 
-This repository contains support for the following SparkFun Arduino-compatible development boards, modified to work as XInput devices. Originally forked from [the SparkFun repo](https://github.com/sparkfun/Arduino_Boards).
+This repository contains support for the SparkFun Arduino-compatible development boards, modified to work as XInput devices. Originally forked from [the SparkFun repo](https://github.com/sparkfun/Arduino_Boards).
 
 These boards are meant to be used in conjunction with the [ArduinoXInput library](https://github.com/dmadison/ArduinoXInput).
-
-## Included Boards
-
-* [MaKey MaKey](https://www.sparkfun.com/products/11511)
-* [Pro Micro 3.3V](https://www.sparkfun.com/products/10999)
-* [Pro Micro 5V](https://www.sparkfun.com/products/11098)
-* [Fio v3](https://www.sparkfun.com/products/11520)
-* [Qduino Mini](https://www.sparkfun.com/products/13614)
-* [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
 
 ## Installation
 <pre>
@@ -46,10 +38,17 @@ To uninstall, delete the 'xinput_sparkfun' folder in the 'hardware' directory, a
 
 ## Upload Warning and Instructions
 
-**!!!!!!! IMPORTANT !!!!!!!**
-
 Due to the nature of how the XInput USB mode works, Arduinos that have XInput sketches on them will ***not*** automatically reset when programmed by the IDE! You will need to reset the board by hand every time you upload new code.
 
 [Full instructions for uploading are provided in the AVR Core repository](https://github.com/dmadison/ArduinoXInput_AVR/#upload-warning-and-instructions).
 
-**Do *not* upload XInput sketches to your Arduino unless you know how to reset it!** Otherwise you will not be able to program it anymore and you'll have to [reflash the bootloader](https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader/all) with an external programmer.
+**Do *not* upload XInput sketches to your Arduino unless you know how to reset it!** Otherwise you will not be able to program it anymore and you'll have to remove the XInput sketch by flashing the board with an external programmer.
+
+## Included Boards
+
+* [MaKey MaKey](https://www.sparkfun.com/products/11511)
+* [Pro Micro 3.3V](https://www.sparkfun.com/products/10999)
+* [Pro Micro 5V](https://www.sparkfun.com/products/11098)
+* [Fio v3](https://www.sparkfun.com/products/11520)
+* [Qduino Mini](https://www.sparkfun.com/products/13614)
+* [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
