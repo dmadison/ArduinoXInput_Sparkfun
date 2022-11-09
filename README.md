@@ -46,9 +46,13 @@ Due to the nature of how the XInput USB mode works, Arduinos that have XInput sk
 
 ## Included Boards
 
+All of the following boards make use of the [Arduino XInput AVR core](https://github.com/dmadison/ArduinoXInput_AVR):
+
 * [MaKey MaKey](https://www.sparkfun.com/products/11511)
 * [Pro Micro 3.3V](https://www.sparkfun.com/products/10999)
 * [Pro Micro 5V](https://www.sparkfun.com/products/11098)
 * [Fio v3](https://www.sparkfun.com/products/11520)
 * [Qduino Mini](https://www.sparkfun.com/products/13614)
 * [LilyPad USB Plus](https://www.sparkfun.com/products/14346)
+
+Other SparkFun boards may be theoretically compatible with XInput, but are not yet available because the XInput USB modifications have not been ported to their architecture.
